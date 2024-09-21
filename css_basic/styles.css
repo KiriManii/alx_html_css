@@ -3,6 +3,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #f0f4f8; /* Light background for a fresh look */
+    font-family: 'Arial', sans-serif; /* More modern font */
+    color: #333; /* Darker text for better readability */
 }
 
 /* Flexbox for the main section */
@@ -10,17 +13,27 @@ main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #ffffff; /* White background for the main content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Article and aside sizes */
 article {
     flex: 2;
     overflow-y: auto;
+    padding: 20px; /* Inner padding for the article */
+    background-color: #e9f5ff; /* Light blue background for article */
+    border-radius: 8px; /* Rounded corners */
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
+    padding: 20px; /* Inner padding for the aside */
+    background-color: #ffe8e8; /* Light red background for aside */
+    border-radius: 8px; /* Rounded corners */
+    margin-left: 20px; /* Space between article and aside */
 }
 
 /* Styling for the logo */
@@ -35,6 +48,11 @@ aside {
 a {
     color: #24D6FF; /* Cyan color from the logo */
     text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #1a9bc5; /* Darker cyan on hover */
 }
 
 /* Update heading colors using cyan from the logo */
@@ -45,8 +63,9 @@ h1, h2, h3 {
 /* Optional: Styling for header and footer */
 header, footer {
     padding: 10px;
-    background-color: #f8f9fa;
+    background-color: #ffffff; /* White background for header and footer */
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Styling for the header */
@@ -67,6 +86,24 @@ header ul {
 
 header ul li {
     margin-right: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Light border for table */
+}
+
+th {
+    background-color: #24D6FF; /* Cyan background for header */
+    color: white; /* White text for better contrast */
 }
 
 /* Responsive design for smaller screens */
