@@ -1,6 +1,6 @@
 # My Cool Webpage
 
-Welcome to **My Cool Webpage**, a simple HTML and CSS project that showcases fundamental web development skills. This project is part of a learning journey to understand and implement basic concepts of web design using HTML and CSS.
+Welcome to **My Cool Webpage**, a simple HTML and CSS project that showcases fundamental web development skills. This project is part of an ALX project aimed at learning the basics of web design and development using HTML and CSS.
 
 ## Table of Contents
 
@@ -14,23 +14,23 @@ Welcome to **My Cool Webpage**, a simple HTML and CSS project that showcases fun
 
 ## Project Overview
 
-This webpage demonstrates the basics of HTML structure and CSS styling. It is designed as part of an ALX project to apply fundamental concepts of web design including layout, text styling, and responsive design. The project is meant to reinforce the understanding of:
+This project demonstrates the basics of HTML structure and CSS styling, designed as part of an ALX learning experience. It includes concepts like:
 
 - Basic HTML structure (header, main, article, aside, and footer).
-- CSS styling, including selectors, classes, flexbox for layout, and more.
-- Responsive design using media queries.
+- CSS styling techniques, including selectors, classes, Flexbox for layout, and more.
+- Responsive design for both desktop and mobile views.
 
 ## Features
 
-- **Homepage**: Introduction to HTML and web development.
-- **Tweets Page**: Displays an embedded tweet, using the `blockquote` element.
-- **Table Layout**: Displays a simple table with learner information.
-- **Responsive Layout**: Uses CSS Flexbox for positioning content on the page and responsive design for mobile users.
+- **Homepage**: Introduction to HTML and basic web development concepts.
+- **Tweets Page**: Displays an embedded tweet using the `blockquote` element.
+- **Table Layout**: A simple table showcasing information about learners.
+- **Responsive Design**: Implements CSS Flexbox to position and scale content across different screen sizes.
 
 ## Technologies Used
 
 - **HTML5**: Markup language for structuring the webpage.
-- **CSS3**: Styling language to design and layout the webpage.
+- **CSS3**: Styling language for page layout, design, and responsiveness.
 
 ## Setup
 
