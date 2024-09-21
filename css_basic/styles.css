@@ -23,9 +23,69 @@ aside {
     overflow-y: auto;
 }
 
+/* Styling for the logo */
+.logo img {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+/* Update link color using cyan from the logo */
+a {
+    color: #24D6FF; /* Cyan color from the logo */
+    text-decoration: none;
+}
+
+/* Update heading colors using cyan from the logo */
+h1, h2, h3 {
+    color: #24D6FF; /* Cyan color from the logo */
+}
+
 /* Optional: Styling for header and footer */
 header, footer {
     padding: 10px;
     background-color: #f8f9fa;
     text-align: center;
+}
+
+/* Styling for the header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 100px; /* Make the logo smaller for mobile */
+    }
 }
