@@ -1,0 +1,31 @@
+/* Flexbox for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Flexbox for the main section */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Article and aside sizes */
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Optional: Styling for header and footer */
+header, footer {
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
