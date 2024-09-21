@@ -38,4 +38,4 @@ To view this project on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/alx_html_css.git
+   git clone https://github.com/KiriManii/alx_html_css.git
