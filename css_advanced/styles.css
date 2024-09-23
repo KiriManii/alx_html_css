@@ -19,6 +19,13 @@ header {
     align-items: center;
 }
 
+header {
+    background-image: url('images/Object.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 nav ul {
     list-style: none;
     display: flex;
