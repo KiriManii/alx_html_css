@@ -1,23 +1,22 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 /* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
 /* Header */
 header {
     background-color: #071629;
     padding: 20px;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav img {
-    width: 100px; /* Adjust size as needed */
 }
 
 nav ul {
@@ -31,62 +30,214 @@ nav a {
     text-decoration: none;
 }
 
-/* Main Section */
-main {
-    padding: 20px;
-}
-
-/* Get Schooled Section */
-h1 {
-    font-size: 120px;
+/* Main Content */
+.main-content {
     text-align: center;
-    color: white;
-}
-
-h2 {
-    font-size: 32px;
-    text-align: center;
-}
-
-span {
-    display: block;
-    font-weight: bold;
-    color: white;
-}
-
-button {
+    padding: 50px 0;
     background-color: #c271ff;
     color: white;
+}
+
+.main-content h1 {
+    font-size: 120px;
+}
+
+.main-content span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-content button {
+    background-color: white;
+    color: #c271ff;
     border: none;
     padding: 10px 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 
-/* Testimonials Section */
-section:nth-of-type(2) {
-    background-color: #c271ff; /* Background color for testimonials */
-    color: #c271ff;
+/* Instructor Section */
+.instructor-section {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+.instructor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.instructor-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.instructor-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.instructor-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.instructor-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #c271ff;
+    color: white;
+    padding: 50px 0;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.testimonial-content blockquote {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.testimonial-content h3,
+.testimonial-content p {
+    margin-top: 10px;
 }
 
 /* Tutorials Section */
-h2 {
+.tutorials-section {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+.tutorials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tutorial {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
     text-align: center;
-    margin-top: 20px;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tutorial h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.tutorial p {
+    font-size: 16px;
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.instructor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.star-rating {
+    margin-top: 10px;
+}
+
+.star-rating i {
+    color: gold;
 }
 
 /* Free Membership Section */
-section:nth-of-type(4) {
+.free-membership-section {
+    background-color: #c271ff;
+    color: white;
+    padding: 50px 0;
     text-align: center;
 }
 
-section:nth-of-type(4) img {
-    width: 100px; /* Adjust size as needed */
+.membership-benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+}
+
+.benefit h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.benefit p {
+    font-size: 16px;
 }
 
 /* FAQ Section */
-h3 {
-    font-weight: bold;
-    color: #071629;
+.faq-section {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+.faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 16px;
+    color: #666;
 }
 
 /* Footer */
@@ -94,96 +245,27 @@ footer {
     background-color: #071629;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
-footer section {
+footer .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+footer .social-icons i {
+    font-size: 24px;
+    margin-left: 10px;
 }
 
 footer p {
-    opacity: 0.35;
-}
-
-/* Flexbox for Layouts */
-section > div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-}
-
-/* Adjustments for images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Specific styling for stars */
-.fa-star {
-    color: gold;
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    h1 {
-        font-size: 80px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav img {
-        width: 80px; /* Adjust logo size */
-    }
-
-    section > div {
-        flex-direction: column; /* Stack sections on small screens */
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 60px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    button {
-        padding: 8px 16px;
-    }
-
-    footer section {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        font-size: 14px; /* Smaller text for links */
-    }
+    margin-top: 10px;
+    opacity: 0.8;
 }
