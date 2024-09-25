@@ -1,0 +1,438 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 800px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  padding: 28px 80px 115px;
+  background-image: url('images/headphones_hero_1.jpg'); /* Set the background image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Add a semi-transparent overlay for better text readability */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  margin-bottom: -23px;
+  width: 100%;
+  max-width: 1000px; /* Limit the width to 1000px */
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; /* Ensure content stays above the overlay */
+  margin-left: auto; /* Center the content */
+  margin-right: auto; /* Center the content */
+}
+
+.header {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  aspect-ratio: 5.03;
+  object-fit: contain;
+  object-position: center;
+  width: 161px;
+  max-width: 100%;
+}
+
+/* Updated navigation menu styling */
+.nav-menu {
+  display: flex;
+  gap: 40px 41px;
+  margin: auto 0;
+}
+
+.nav-menu a {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+  font-weight: 700; /* Bold text */
+  font-size: 14px; /* Set a font size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+  color: #FF6565; /* Hover/active state color */
+}
+
+.hero-title {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 312px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Updated CTA button styling */
+.cta-button {
+  border-radius: 22px;
+  background-color: #ff6565;
+  margin-top: 40px;
+  width: 162px;
+  font-size: 14px;
+  text-align: center;
+  padding: 13px 31px;
+  color: white; /* Set the text color to white */
+  text-decoration: none; /* Remove underline */
+  font-weight: 700; /* Ensure bold text */
+  display: inline-block; /* Ensure it's treated as a button */
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth hover and opacity transition */
+}
+
+.cta-button:hover,
+.cta-button:active {
+  opacity: 0.9; /* Hover/active state opacity */
+  background-color: #e94b4b; /* Slightly darker red on hover/active */
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 65px;
+  width: 637px;
+}
+
+/* Responsive adjustments for screens 991px or less */
+@media (max-width: 991px) {
+  .hero-section {
+      max-width: 100%;
+      margin-right: 5px;
+      padding: 0 20px 100px;
+  }
+
+  .hero-content {
+      max-width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .hero-title {
+      max-width: 100%;
+      margin-top: 40px;
+  }
+
+  .hero-description {
+      max-width: 100%;
+      margin-top: 40px;
+  }
+
+  .cta-button {
+      padding: 0 20px;
+  }
+}
+
+/* Mobile adjustments for screens 480px or less */
+@media (max-width: 480px) {
+  .hero-section {
+      padding: 20px 15px 80px; /* Adjust padding for smaller screens */
+  }
+
+  .hero-title {
+      font-size: 24px; /* Reduce the font size */
+      margin-top: 20px;
+  }
+
+  .hero-subtitle {
+      font-size: 14px; /* Reduce the font size */
+  }
+
+  .nav-menu {
+      gap: 20px; /* Reduce the gap between nav items */
+  }
+
+  .cta-button {
+      width: 140px; /* Reduce button size */
+      padding: 10px 20px; /* Adjust button padding */
+  }
+
+  .hero-description {
+      font-size: 14px; /* Reduce the font size */
+      line-height: 22px; /* Adjust line height */
+      width: 100%;
+      margin-top: 30px;
+  }
+}
+
+/* Styles for What We Do section */
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  margin: 60px 0 20px;
+}
+
+.section-description {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-section {
+  padding: 20px 0;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-item {
+  text-align: center;
+  width: 200px;
+}
+
+.feature-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Styles for Our Results section */
+.results-section {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  position: relative;
+  min-height: 650px;
+  margin-top: 110px;
+  align-items: center;
+  justify-content: center;
+  padding: 119px 80px;
+}
+
+/* Background Image for Results Section */
+.results-section {
+  background-image: url('images/headphones_hero_2.jpg'); /* Set the background image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 978px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section Title for Results */
+.results-section .section-title {
+  color: #fff;
+  text-align: center;
+  font: 600 32px 'Source Sans Pro', sans-serif;
+}
+
+/* Section Description for Results */
+.results-section .section-description {
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  width: 637px;
+  font: 400 16px/26px 'Source Sans Pro', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+/* Stats Container */
+.stats-container {
+  align-self: stretch;
+  margin-top: 56px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  gap: 20px;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Stat Column */
+.stat-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 25%; /* You can adjust this based on how many stats you want per row */
+}
+
+/* Stat Item */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  aspect-ratio: 1.047;
+  flex-grow: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 70px 35px 30px;
+}
+
+/* Stat Percentage */
+.stat-percentage {
+  position: relative;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+  align-self: center;
+}
+
+/* Stat Description */
+.stat-description {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments for Our Results section */
+@media (max-width: 991px) {
+  .results-section {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 100px 20px 0;
+  }
+
+  .content-wrapper {
+      max-width: 100%;
+  }
+
+  .results-section .section-title,
+  .results-section .section-description {
+      max-width: 100%;
+  }
+
+  .stats-container {
+      max-width: 100%;
+      margin-top: 40px;
+  }
+
+  .stats-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+  }
+
+  .stat-column {
+      width: 100%;
+  }
+
+  .stat-item {
+      margin-top: 40px;
+      padding: 0 20px;
+  }
+
+  .stat-percentage {
+      font-size: 40px;
+  }
+}
+
+/* Contact Heading Styles */
+.contact-heading {
+  color: rgba(7, 22, 41, 1);
+  text-align: center;
+  margin-top: 110px;
+  font: 600 32px SourceSansPro, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .contact-heading {
+    margin-top: 40px;
+  }
+}
+
+/* Name Label Styles */
+.name-label {
+  color: rgba(7, 22, 41, 1);
+  margin-top: 56px;
+  font: 600 14px SourceSansPro, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .name-label {
+    margin-top: 40px;
+  }
+}
+
+/* Divider Styles */
+.divider {
+  background-blend-mode: normal;
+  background-color: rgba(7, 22, 41, 1);
+  display: flex;
+  margin-top: 10px;
+  width: 335px;
+  max-width: 100%;
+  height: 1px;
+}
+
+/* Email Label Styles */
+.email-label {
+  color: rgba(7, 22, 41, 1);
+  margin-top: 45px;
+  font: 600 14px SourceSansPro, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .email-label {
+    margin-top: 40px;
+  }
+}
+
+/* Message Styles */
+.message {
+  color: rgba(7, 22, 41, 1);
+  margin-top: 45px;
+  font: 600 14px SourceSansPro, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .message {
+    margin-top: 40px;
+  }
+}
