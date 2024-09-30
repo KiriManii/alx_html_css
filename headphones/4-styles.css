@@ -392,6 +392,8 @@
   color: rgba(7, 22, 41, 1);
   margin-top: 56px;
   font: 600 14px SourceSansPro, sans-serif;
+  text-align: center; /* Center the labels */
+  display: block; /* Ensure they take up full width */
 }
 
 @media (max-width: 991px) {
@@ -405,7 +407,7 @@
   background-blend-mode: normal;
   background-color: rgba(7, 22, 41, 1);
   display: flex;
-  margin-top: 10px;
+  margin: 0 auto; /* Center the underline */
   width: 335px;
   max-width: 100%;
   height: 1px;
@@ -416,6 +418,8 @@
   color: rgba(7, 22, 41, 1);
   margin-top: 45px;
   font: 600 14px SourceSansPro, sans-serif;
+  text-align: center; /* Center the labels */
+  display: block; /* Ensure they take up full width */
 }
 
 @media (max-width: 991px) {
@@ -429,6 +433,8 @@
   color: rgba(7, 22, 41, 1);
   margin-top: 45px;
   font: 600 14px SourceSansPro, sans-serif;
+  text-align: center; /* Center the labels */
+  display: block; /* Ensure they take up full width */
 }
 
 @media (max-width: 991px) {
