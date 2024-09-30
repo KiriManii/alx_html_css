@@ -16,7 +16,7 @@
   color: #fff;
   font-weight: 700;
   padding: 28px 80px 115px;
-  background-image: url('images/headphones_hero_1.jpg'); /* Set the background image here */
+  background-image: url('images/headphones_hero_1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -39,12 +39,12 @@
   display: flex;
   margin-bottom: -23px;
   width: 100%;
-  max-width: 1000px; /* Limit the width to 1000px */
+  max-width: 1000px;
   flex-direction: column;
   align-items: center;
-  z-index: 2; /* Ensure content stays above the overlay */
-  margin-left: auto; /* Center the content */
-  margin-right: auto; /* Center the content */
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -73,16 +73,16 @@
 }
 
 .nav-menu a {
-  color: white; /* Set text color to white */
-  text-decoration: none; /* Remove underline */
-  font-weight: 700; /* Bold text */
-  font-size: 14px; /* Set a font size */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .nav-menu a:hover,
 .nav-menu a:active {
-  color: #FF6565; /* Hover/active state color */
+  color: #FF6565;
 }
 
 .hero-title {
@@ -105,17 +105,17 @@
   font-size: 14px;
   text-align: center;
   padding: 13px 31px;
-  color: white; /* Set the text color to white */
-  text-decoration: none; /* Remove underline */
-  font-weight: 700; /* Ensure bold text */
-  display: inline-block; /* Ensure it's treated as a button */
-  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth hover and opacity transition */
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .cta-button:hover,
 .cta-button:active {
-  opacity: 0.9; /* Hover/active state opacity */
-  background-color: #e94b4b; /* Slightly darker red on hover/active */
+  opacity: 0.9;
+  background-color: #e94b4b;
 }
 
 .hero-description {
@@ -134,22 +134,22 @@
       margin-right: 5px;
       padding: 0 20px 100px;
   }
-
+  
   .hero-content {
       max-width: 100%;
       margin-bottom: 10px;
   }
-
+  
   .hero-title {
       max-width: 100%;
       margin-top: 40px;
   }
-
+  
   .hero-description {
       max-width: 100%;
       margin-top: 40px;
   }
-
+  
   .cta-button {
       padding: 0 20px;
   }
@@ -158,30 +158,30 @@
 /* Mobile adjustments for screens 480px or less */
 @media (max-width: 480px) {
   .hero-section {
-      padding: 20px 15px 80px; /* Adjust padding for smaller screens */
+      padding: 20px 15px 80px;
   }
-
+  
   .hero-title {
-      font-size: 24px; /* Reduce the font size */
+      font-size: 24px;
       margin-top: 20px;
   }
-
+  
   .hero-subtitle {
-      font-size: 14px; /* Reduce the font size */
+      font-size: 14px;
   }
-
+  
   .nav-menu {
-      gap: 20px; /* Reduce the gap between nav items */
+      gap: 20px;
   }
-
+  
   .cta-button {
-      width: 140px; /* Reduce button size */
-      padding: 10px 20px; /* Adjust button padding */
+      width: 140px;
+      padding: 10px 20px;
   }
-
+  
   .hero-description {
-      font-size: 14px; /* Reduce the font size */
-      line-height: 22px; /* Adjust line height */
+      font-size: 14px;
+      line-height: 22px;
       width: 100%;
       margin-top: 30px;
   }
@@ -243,11 +243,7 @@
   align-items: center;
   justify-content: center;
   padding: 119px 80px;
-}
-
-/* Background Image for Results Section */
-.results-section {
-  background-image: url('images/headphones_hero_2.jpg'); /* Set the background image here */
+  background-image: url('images/headphones_hero_2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -289,15 +285,15 @@
 .stats-grid {
   gap: 20px;
   display: flex;
-  justify-content: center; /* Center items horizontally */
+  justify-content: center;
 }
 
 /* Stat Column */
 .stat-column {
   display: flex;
-  flex-direction: column; /* Stack pentagon and text vertically */
+  flex-direction: column;
   line-height: normal;
-  width: 25%; /* You can adjust this based on how many stats you want per row */
+  width: 25%;
 }
 
 /* Stat Item */
@@ -313,53 +309,235 @@
   padding: 70px 35px 30px;
 }
 
-/* Pentagon Styles */
-.pentagon {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #ff6565; /* Pentagon color changed to #ff6565 */
-  margin: 0 auto; /* Center the pentagon */
-  position: relative; /* Positioning for the inner text */
-}
-
 /* Stat Percentage */
 .stat-percentage {
-  margin-top: 10px; /* Space between pentagon and percentage */
+  position: relative;
   font-size: 46px;
   font-weight: 700;
   line-height: 1;
-  color: #fff; /* Text color for visibility */
-  text-align: center; /* Center align the text */
+  align-self: center;
 }
 
 /* Stat Description */
 .stat-description {
-  margin-top: 5px; /* Space between percentage and description */
+  position: relative;
   font-size: 14px;
-  color: #fff; /* Text color for visibility */
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 20px;
 }
 
-/* Styles for the Contact Section */
-.contact-section {
-  background: #000;
-  padding: 60px 0;
-  color: #fff;
+/* New styles for pentagons */
+.pentagon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pentagon {
+  position: relative;
+  width: calc(25% - 20px);
+  height: 150px;
+  background-color: #FF5733;
+  margin: 10px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.pentagon-content {
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Responsive adjustments for contact section */
-@media (max-width: 480px) {
-  .contact-section {
-    padding: 30px 0; /* Adjust padding for smaller screens */
-  }
+.percentage {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
 
-  .contact-section h2 {
-    font-size: 24px; /* Reduce heading font size */
-  }
+.description {
+  font-size: 14px;
+  color: #FFFFFF;
+}
 
-  .contact-section p {
-    font-size: 14px; /* Reduce paragraph font size */
+/* Responsive adjustments for Our Results section */
+@media (max-width: 991px) {
+  .results-section {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 100px 20px 0;
+  }
+  
+  .content-wrapper {
+      max-width: 100%;
+  }
+  
+  .results-section .section-title,
+  .results-section .section-description {
+      max-width: 100%;
+  }
+  
+  .stats-container {
+      max-width: 100%;
+      margin-top: 40px;
+  }
+  
+  .stats-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+  }
+  
+  .stat-column {
+      width: 100%;
+  }
+  
+  .stat-item {
+      margin-top: 40px;
+      padding: 0 20px;
+  }
+  
+  .stat-percentage {
+      font-size: 40px;
+  }
+}
+
+/* Contact Heading Styles */
+.contact-heading {
+  color: rgba(7, 22, 41, 1);
+  text-align: center;
+  margin-top: 110px;
+  font: 600 32px SourceSansPro, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .contact-heading {
+      margin-top: 40px;
+  }
+}
+
+/* Name Label Styles */
+.name-label {
+  color: rgba(7, 22, 41, 1);
+  margin-top: 56px;
+  font: 600 14px SourceSansPro, sans-serif;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .name-label {
+      margin-top: 40px;
+  }
+}
+
+/* Divider Styles */
+.divider {
+  background-blend-mode: normal;
+  background-color: rgba(7, 22, 41, 1);
+  display: flex;
+  margin: 0 auto;
+  width: 335px;
+  max-width: 100%;
+  height: 1px;
+}
+
+/* Email Label Styles */
+.email-label {
+  color: rgba(7, 22, 41, 1);
+  margin-top: 45px;
+  font: 600 14px SourceSansPro, sans-serif;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .email-label {
+      margin-top: 40px;
+  }
+}
+
+/* Message Styles */
+.message {
+  color: rgba(7, 22, 41, 1);
+  margin-top: 45px;
+  font: 600 14px SourceSansPro, sans-serif;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .message {
+      margin-top: 40px;
+  }
+}
+
+/* Footer Styles */
+.footer-background {
+  background-color: rgba(7, 22, 41, 1);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 80px 39px;
+  margin-top: 130px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-icon {
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+}
+
+.facebook-icon {
+  aspect-ratio: 5.03;
+  width: 161px;
+}
+
+.twitter-icon {
+  aspect-ratio: 4.33;
+  width: 130px;
+}
+
+.copyright {
+  color: #fff;
+  align-self: center;
+  margin-top: 71px;
+  font: 400 12px Source Sans Pro, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .footer-background {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+  }
+  
+  .footer-content,
+  .social-icons {
+      max-width: 100%;
+  }
+  
+  .copyright {
+      margin-top: 40px;
   }
 }
